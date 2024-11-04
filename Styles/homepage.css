@@ -90,6 +90,14 @@ body, html {
     width: 80%;
 }
 
+.widgetButton {
+    width: 80%;
+    text-align: center;
+    left: auto;
+    right: auto;
+    position: relative;
+}
+
 .sectionMargins {
     padding:60px 16px 70px 16px;
 }
@@ -97,6 +105,10 @@ body, html {
 .faIcon {
     font-size: 48px !important;
     margin-bottom: 16px !important;
+}
+
+.faIconManagement {
+    font-size: 99px !important;
 }
 
 .footer {
