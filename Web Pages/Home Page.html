@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Home | Watsonville Fleet Group</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-language" content="en-us" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Styles/homepage.css" />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-wide logo"></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#Home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+          <a href="#About" class="w3-bar-item w3-button"><i class="fa fa-users"></i> About</a>
+          <a href="#ContactUs" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
+          <a href="#ContactUs" class="w3-bar-item w3-button" style="border-left: 1px solid grey"><i class="fa fa-user"></i> Login</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+      <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="Home">
+      <div id="BannerDisplayText" class="w3-display-left w3-text-white" style="padding: 48px">
+        <span class="w3-jumbo w3-hide-small">Federal, State, County & Local Government Vehicle Vendor</span><br />
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium"
+          >Federal, State, County & Local Government Vehicle Vendor</span
+        ><br />
+        <span class="w3-large">Over 40+ Years Providing Quality Vehicles and Services</span>
+        <p>
+          <a id="BannerAboutUs" href="#About" class="w3-padding-large w3-large w3-margin-top">Learn more About Us</a>
+        </p>
+      </div>
+    </header>
+
+    <!-- Partners Section -->
+    <div class="w3-container sectionMargins" id="Partners">
+      <h3 class="w3-center redHeader sectionHeader">
+        We are a Manufacturer Authorized Distributor/Reseller of Major Brand Vehicles
+      </h3>
+      <p class="w3-center subsectionHeader">Our company is partnered with:</p>
+      <div class="w3-row-padding w3-center" style="margin-top: 64px">
+        <img id="CarLogos" src="/Images/car%20logos%20medium.png" />
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container sectionMargins" id="About">
+      <h3 class="w3-center sectionHeader">Providing Quality Vehicles for over 40+ Years</h3>
+      <p class="w3-center subsectionHeader">About Our Company</p>
+      <div class="w3-row-padding w3-center" style="margin-top: 34px">
+        <div class="w3-col aboutUsSpace"><p></p></div>
+        <div class="w3-col aboutUsText subsectionText">
+          <p>
+            Watsonville Fleet Group is a government contractor that provides fleet vehicles for public government
+            entities. As an authorized dealer for Chevrolet, Ford, Dodge, Chrysler, Jeep and Ram, we specialize in
+            competitive bidding for government contracts at the federal, state and local levels. With over 40 years of
+            experience in the fleet business, we strive to provide quality products and turn-key services to our
+            clients. Our attention to detail and maintaining government compliant standards is the secret to our success
+            with the public sector. Aligning our services with the high demand of government purchasing.
+          </p>
+        </div>
+        <div class="w3-col aboutUsSpace"><p></p></div>
+      </div>
+      <div class="w3-row-padding w3-center" style="margin-top: 64px">
+        <div class="w3-col aboutUsSpace"><p></p></div>
+        <div class="w3-col aboutUsText">
+          <div class="w3-third">
+            <i class="fa fa-usd faIcon"></i>
+            <p class="subsectionHeader">Competitive Prices</p>
+            <p class="subsectionText">
+              With our NAFC and Sourcewell Partnership we are able to provide a competitive discounted price on most of
+              our vehicles.
+            </p>
+          </div>
+          <div class="w3-third">
+            <i class="fa fa-usd faIcon"></i>
+            <p class="subsectionHeader">Compliant</p>
+            <p class="subsectionText">
+              We are always seeking for improvement by maintaining and updating our policies to meet the requirements
+              and standards set forth by all US government entities.
+            </p>
+          </div>
+          <div class="w3-third">
+            <i class="fa fa-map-marker faIcon"></i>
+            <p class="subsectionHeader">Always Here For You</p>
+            <p class="subsectionText">
+              With our multiple point of contact system, you can always reach us either by phone, email, or live chat.
+              We are here ready to help.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col aboutUsSpace"><p></p></div>
+      </div>
+    </div>
+
+    <!-- Contact Us-->
+    <div class="w3-container sectionMargins" style="margin-bottom:20px" id="ContactUs">
+      <h3 class="w3-center redHeader sectionHeader">Contact Us</h3>
+      <div class="w3-row-padding w3-center" style="margin-top: 34px">
+        <div class="w3-col aboutUsSpace"><p></p></div>
+        <div class="w3-col aboutUsText">
+          <div class="w3-third">
+            <i class="fa fa-phone faIcon"></i>
+            <p class="subsectionHeader">Call Us</p>
+            <div id="telephone-text" class="subsectionText">
+              <span class="bottom-text"
+                >Tel: <a class="text-white text-decoration-none" href="tel:8552896572">855-289-6572</a></span
+              >
+              <span id="telephone-text-seperator" class="bottom-text">|</span>
+              <span class="bottom-text"
+                >Fax: <a class="text-white text-decoration-none" href="tel:8314808497">831-480-8497</a></span
+              >
+            </div>
+          </div>
+          <div class="w3-third">
+            <i class="fa fa-envelope faIcon"></i>
+            <p class="subsectionHeader">Email Us</p>
+            <div class="subsectionText">
+              <div class="row">
+                <a class="text-white text-decoration-none" href="mailto:fleet@watsonvillefleetgroup.com"
+                  >fleet@watsonvillefleetgroup.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w3-third">
+            <i class="fa fa-clock-o faIcon"></i>
+            <p class="subsectionHeader">Office Hours</p>
+            <div class="subsectionText">
+              <div class="row">
+                <span>Mon - Fri: 7am - 10pm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col aboutUsSpace"><p></p></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center footer">
+      <div class="w3-row-padding w3-center" style="margin-top: 34px">
+        <div class="w3-col aboutUsSpace"><p></p></div>
+        <div class="w3-col aboutUsText">
+          <div class="w3-quarter">
+            <p class="footerHeader">OVER 40 YEARS EXPERIENCE</p>
+            <p class="subsectionText">Trusted vehicles at a great competitive price!</p>
+          </div>
+          <div class="w3-quarter">
+            <p class="footerHeader">OUR SERVICES</p>
+            <p class="footerText">
+              Competitive Pricing<br />
+              Federal & State Standard Compliant<br />
+              Great Customer Service<br />
+              Sourcewell Contract<br />
+              State of CA Contract
+            </p>
+          </div>
+          <div class="w3-quarter">
+            <p class="footerHeader">Headquaters:</p>
+            <p class="footerText">490 Auto Center Drive<br />Watsonville CA 95076 US</p>
+          </div>
+          <div class="w3-quarter">
+            <p class="footerHeader">Fleet Center:</p>
+            <p class="footerText">1601 W. Main St<br />Alhambra, CA 91801 US</p>
+          </div>
+        </div>
+        <div class="w3-col aboutUsSpace"><p></p></div>
+      </div>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

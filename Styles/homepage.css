@@ -1,0 +1,115 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/Images/background_car.jpg");
+  min-height: 70%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.logo {
+    background-image: url("/Images/watsonville_logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 153px;
+    float: left;
+    border: none;
+    display: block;
+    outline: 0;
+    height: 38px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.redHeader {
+    color: #B42033;
+    font-weight: bold;
+}
+
+.sectionHeader {
+    font-size: 44px;
+    margin: 0;
+}
+
+.subsectionHeader {
+    font-size: 34px;
+    margin: 0;
+}
+
+.subsectionText {
+    font-size: 20px;
+}
+
+#BannerDisplayText {
+    background-color: rgba(60,59,110,.7);
+}
+
+#BannerAboutUs {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: #B42033;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#BannerAboutUs:hover {
+    background-color: #B23949;
+}
+
+#CarLogos {
+    max-width:70%;
+    max-height: 500px;
+}
+
+#About {
+    color: #FFF;
+    background-color: #3C3B6E;
+}
+
+.aboutUsSpace {
+    width: 10%;
+}
+
+.aboutUsText {
+    width: 80%;
+}
+
+.sectionMargins {
+    padding:60px 16px 70px 16px;
+}
+
+.faIcon {
+    font-size: 48px !important;
+    margin-bottom: 16px !important;
+}
+
+.footer {
+    border-top: 10px solid #B42033;
+    background-color: black;
+    color: white;
+}
+
+.footerHeader {
+    font-size: 34px;
+    margin: 0;
+}
+
+.footerText {
+    font-size: 20px;
+}
