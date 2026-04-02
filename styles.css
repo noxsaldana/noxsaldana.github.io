@@ -680,3 +680,31 @@ footer a { color: var(--color-teal-light); }
   .btn-primary, .btn-secondary { width: 100%; text-align: center; }
   .hero-buttons { flex-direction: column; }
 }
+
+/* ============================================================
+   FIXED WILDLIFE BANNER
+   — always visible at bottom-right, scales with viewport,
+     never blocks clicks on content beneath it
+============================================================ */
+.wildlife-banner {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* clamp(min, fluid, max): shrinks on small screens, caps on large */
+  width: clamp(180px, 25vw, 420px);
+  padding-right: clamp(12px, 2vw, 32px); /* keeps it off the right edge */
+  padding-bottom: 0;                      /* sits flush with the bottom */
+  pointer-events: none;                   /* never intercepts clicks */
+  z-index: 50;                            /* above content, below navbar (100) */
+  display: block;
+  opacity: 0.72;                          /* subtle — tweak as desired */
+  transition: opacity 0.3s;
+}
+
+/* Slightly more visible on hover (optional feel) */
+.wildlife-banner:hover { opacity: 0.9; }
+
+/* Hide on very small phones where it would crowd the UI */
+@media (max-width: 480px) {
+  .wildlife-banner { display: none; }
+}
