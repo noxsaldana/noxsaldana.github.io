@@ -520,8 +520,8 @@ section { padding: var(--section-pad); }
 }
 
 /* ============================================================
-   DONATE
-============================================================ */
+   DONATE — commented out for now, re-enable when ready
+============================================================
 #donate {
   background: var(--color-gray-dark);
   padding: var(--section-pad);
@@ -557,6 +557,7 @@ section { padding: var(--section-pad); }
   border-color: var(--color-teal);
 }
 .donate-cta { margin-top: 8px; }
+*/
 
 /* ============================================================
    CONTACT
@@ -715,9 +716,10 @@ footer a { color: var(--color-teal-light); }
   }
   .event-tag { display: none; }
 
-  /* Donate */
+  /* Donate — commented out for now
   .donate-options { gap: 10px; }
   .donate-amount { padding: 10px 18px; font-size: 14px; }
+  */
 
   /* Contact */
   .contact-grid { grid-template-columns: 1fr; }
