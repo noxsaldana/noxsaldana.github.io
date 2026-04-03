@@ -2,23 +2,56 @@
    BRAND COLOR VARIABLES — edit here to update the whole site
 ============================================================ */
 :root {
-  --color-teal:        #92B8B6;
-  --color-teal-light:  #B8D4D3;
-  --color-teal-dark:   #6A9E9C;
-  --color-teal-wash:   #F5F9F9;
-  --color-gray:        #767676;
-  --color-gray-dark:   #545454;
-  --color-white:       #FFFFFF;
+  --color-teal:         #92B8B6;
+  --color-teal-light:   #B8D4D3;
+  --color-teal-dark:    #6A9E9C;
+  --color-teal-wash:    #F5F9F9;
+  --color-gray:         #767676;
+  --color-gray-dark:    #545454;
+  --color-white:        #FFFFFF;
   --color-whiteOverlay: rgba(255,255,255,.85);
-  --color-text:        #3a3a3a;
+  --color-text:         #3a3a3a;
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Lato', sans-serif;
 
-  --nav-height:   72px;
-  --section-pad:  80px 24px;
-  --radius:       8px;
-  --max-width:    1100px;
+  --nav-height:  72px;
+  --section-pad: 80px 24px;
+  --radius:      8px;
+  --max-width:   1100px;
+}
+
+/* ============================================================
+   IMAGE SOURCES
+   All background-image URLs live here. %20 encodes spaces.
+   Swap filenames here if assets are renamed or moved.
+============================================================ */
+.img-logo-horiz {
+  background-image: url('EW%20Logo%20Horiz%20C.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.img-logo-vert {
+  background-image: url('EW%20Logo%20Vert%20C.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.img-icon {
+  background-image: url('EW%20Icon%20C.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.programs-parallax-bg {
+  background-image: url('Lesser%20Kudu.jpg');
+}
+#hero {
+  background-image: url('Panda%20Coexist.jpg');
+}
+.wildlife-banner {
+  background-image: url('Evolving_Wildlife_Banner_transparent.png');
 }
 
 /* ============================================================
@@ -50,9 +83,9 @@ nav {
   padding: 0 40px;
   z-index: 100;
 }
-.nav-logo img {
+.nav-logo .img-logo-horiz {
   height: 44px;
-  width: auto;
+  width: 160px;
 }
 .nav-links {
   display: flex;
@@ -161,13 +194,10 @@ nav {
   position: relative;
   overflow: hidden;
   padding: 80px 40px;
-  
-  inset: -30% 0;
-  background-image: url('Panda%20Coexist.jpg');
   background-size: cover;
-  will-change: transform;
-  pointer-events: none;
-  z-index: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 /*.hero-bg-shape {
   position: absolute;
@@ -264,7 +294,6 @@ nav {
 .hero-logo-icon {
   width: 300px;
   height: 300px;
-  object-fit: contain;
   animation: float 6s ease-in-out infinite;
 }
 @keyframes float {
@@ -325,8 +354,9 @@ section { padding: var(--section-pad); }
 .about-logo {
   width: 100%;
   max-width: 400px;
-  object-fit: contain;
+  height: 360px;
 }
+/* .about-badge — kept for future use
 .about-badge {
   position: absolute;
   bottom: -16px;
@@ -340,7 +370,7 @@ section { padding: var(--section-pad); }
   text-align: center;
   line-height: 1.4;
   max-width: 160px;
-}
+} */
 
 /* ============================================================
    PROGRAMS — with parallax background
@@ -353,8 +383,9 @@ section { padding: var(--section-pad); }
 .programs-parallax-bg {
   position: absolute;
   inset: -30% 0;
-  background-image: url('Lesser%20Kudu.jpg');
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   opacity: 1;
   will-change: transform;
   pointer-events: none;
@@ -372,8 +403,8 @@ section { padding: var(--section-pad); }
   position: relative;
   z-index: 2;
 }
-.programs-header { 
-  margin-bottom: 48px; 
+.programs-header {
+  margin-bottom: 48px;
   background: var(--color-whiteOverlay);
   border-radius: var(--radius);
   padding: 32px 28px;
@@ -426,9 +457,6 @@ section { padding: var(--section-pad); }
   line-height: 1.7;
   font-weight: 300;
 }
-.empty {
-  background-color: transparent !important;
-}
 
 /* ============================================================
    EVENTS
@@ -456,6 +484,8 @@ section { padding: var(--section-pad); }
   border-radius: var(--radius);
   padding: 10px 8px;
 }
+/* Removes background when no date is present */
+.event-date.empty { background-color: transparent; }
 .event-date-month {
   font-size: 11px;
   font-weight: 700;
@@ -619,7 +649,7 @@ footer {
   padding: 40px 24px;
   text-align: center;
 }
-.footer-logo { height: 36px; margin: 0 auto 16px; }
+.footer-logo { height: 36px; width: 180px; margin: 0 auto 16px; }
 footer p { font-size: 13px; color: rgba(255,255,255,0.5); }
 footer a { color: var(--color-teal-light); }
 
@@ -628,10 +658,8 @@ footer a { color: var(--color-teal-light); }
 ============================================================ */
 @media (max-width: 900px) {
   nav { padding: 0 24px; }
-
   .about-grid { gap: 40px; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-
   .event-item { grid-template-columns: 72px 1fr auto; gap: 16px; padding: 18px 20px; }
 }
 
@@ -652,7 +680,15 @@ footer a { color: var(--color-teal-light); }
   nav { padding: 0 20px; }
 
   /* Hero stacks vertically */
-  #hero { padding: 48px 20px; }
+  #hero {
+    padding: 48px 20px;
+    min-height: auto;                    /* let content set height on small screens */
+    background-position: center top;     /* keep subject visible when cropped tall */
+  }
+  .programs-parallax-bg {
+    inset: 0;                            /* remove overshoot on narrow screens */
+    background-attachment: scroll;       /* fixed bg causes issues on mobile */
+  }
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -662,13 +698,11 @@ footer a { color: var(--color-teal-light); }
   .hero-image-wrap { order: -1; }
   .hero-logo-icon { width: 160px; height: 160px; }
   .hero-subtitle { max-width: 100%; }
-  .hero-bg-shape,
-  .hero-bg-shape2 { display: none; }
+  /* .hero-bg-shape and .hero-bg-shape2 are commented out above */
 
   /* About */
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .about-badge { display: none; }
-  .about-logo { max-width: 260px; margin: 0 auto; }
+  .about-logo { max-width: 260px; margin: 0 auto; height: 240px; }
 
   /* Programs */
   .programs-grid { grid-template-columns: 1fr; }
@@ -711,11 +745,13 @@ footer a { color: var(--color-teal-light); }
   right: 0;
   /* clamp(min, fluid, max): shrinks on small screens, caps on large */
   width: clamp(180px, 25vw, 420px);
+  height: clamp(50px, 7vw, 115px);       /* maintains image aspect ratio */
   padding-right: clamp(12px, 2vw, 32px); /* keeps it off the right edge */
-  padding-bottom: 0;                      /* sits flush with the bottom */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
   pointer-events: none;                   /* never intercepts clicks */
   z-index: 50;                            /* above content, below navbar (100) */
-  display: block;
   opacity: 0.72;                          /* subtle — tweak as desired */
   transition: opacity 0.3s;
 }
