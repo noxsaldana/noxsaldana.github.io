@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "title": "We don't have any events planned right now—please check back soon!",
+    "description": "",
+    "month": null,
+    "day": null,
+    "location": "",
+    "time": "",
+    "tag": "You can help!",
+    "empty": true
+  }
+]
