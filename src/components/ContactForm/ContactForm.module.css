@@ -1,0 +1,106 @@
+.contact { background: var(--color-teal-wash); }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.info p {
+  font-size: 15px;
+  color: var(--color-gray);
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--color-gray);
+}
+.detail svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-teal);
+  fill: none;
+  stroke-width: 2;
+  flex-shrink: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.formGroup label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gray);
+}
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  background: var(--color-white);
+  border: 1px solid var(--color-teal-light);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus { border-color: var(--color-teal); }
+.formGroup textarea { resize: vertical; min-height: 120px; }
+
+.submit {
+  background: var(--color-teal);
+  color: var(--color-white);
+  border: none;
+  padding: 14px 36px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background 0.2s, transform 0.15s;
+  align-self: flex-start;
+}
+.submit:hover:not(:disabled) {
+  background: var(--color-teal-dark);
+  transform: translateY(-1px);
+}
+.submit:disabled { cursor: default; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .grid    { grid-template-columns: 1fr; }
+  .formRow { grid-template-columns: 1fr; }
+  .submit  { width: 100%; text-align: center; align-self: stretch; }
+}

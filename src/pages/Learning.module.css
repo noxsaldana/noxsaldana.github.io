@@ -1,0 +1,14 @@
+.page {
+  margin-top: var(--nav-height);
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  padding: var(--section-pad);
+  background: var(--color-teal-wash);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
