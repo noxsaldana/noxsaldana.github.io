@@ -71,16 +71,6 @@ if (parallaxBg) {
 }
 
 /* ================================================================
-   DONATE — Amount button selection
-================================================================ */
-document.querySelectorAll('.donate-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.donate-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  });
-});
-
-/* ================================================================
    CONTACT FORM — Submission feedback
 ================================================================ */
 const contactForm = document.getElementById('contact-form');

@@ -184,7 +184,7 @@ section { padding: var(--section-pad); }
 
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(-4px);
   background: var(--color-white);
@@ -193,7 +193,7 @@ section { padding: var(--section-pad); }
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   list-style: none;
   min-width: 210px;
-  padding: 8px 0;
+  padding: 12px 0 8px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s, transform 0.2s;
@@ -531,42 +531,6 @@ section { padding: var(--section-pad); }
 }
 
 /* ================================================================
-   DONATE
-================================================================ */
-.donate { background: var(--color-gray-dark); text-align: center; }
-
-.donate .section-eyebrow  { color: var(--color-teal-light); }
-.donate .section-title    { color: var(--color-white); }
-.donate .section-title span { color: var(--color-teal); }
-.donate .section-body     { color: rgba(255,255,255,0.7); margin: 0 auto 40px; }
-.donate .divider          { background: var(--color-teal); margin: 20px auto 32px; }
-
-.donate-options {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 32px;
-}
-
-.donate-btn {
-  border: 2px solid rgba(255,255,255,0.2);
-  color: var(--color-white);
-  background: transparent;
-  padding: 12px 28px;
-  border-radius: var(--radius);
-  font-size: 16px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
-}
-.donate-btn:hover,
-.donate-btn.active { background: var(--color-teal); border-color: var(--color-teal); }
-
-.donate-cta { margin-top: 8px; }
-
-/* ================================================================
    CONTACT
 ================================================================ */
 .contact { background: var(--color-teal-wash); }
@@ -874,9 +838,6 @@ footer a { color: var(--color-teal-light); }
 
   .event-item { grid-template-columns: 60px 1fr; gap: 14px; padding: 16px; }
   .event-tag  { display: none; }
-
-  .donate-options { gap: 10px; }
-  .donate-btn { padding: 10px 18px; font-size: 14px; }
 
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
