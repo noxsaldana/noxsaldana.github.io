@@ -44,6 +44,67 @@
   color: var(--color-white) !important;
 }
 
+/* ── Dropdown ── */
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdownCaret {
+  font-size: 10px;
+  transition: transform 0.2s;
+}
+
+.dropdownWrapper:hover .dropdownCaret {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-white);
+  border: 1px solid var(--color-teal-light);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  list-style: none;
+  min-width: 200px;
+  padding: 8px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  transform: translateX(-50%) translateY(-4px);
+  z-index: 200;
+}
+
+.dropdownVisible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdownItem {
+  display: block;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-dark);
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.dropdownItem:hover {
+  background: var(--color-teal-wash);
+  color: var(--color-teal-dark);
+}
+
 /* ── Hamburger ── */
 .hamburger {
   display: none;
@@ -103,6 +164,25 @@
   transition: color 0.2s;
 }
 .drawerLink:hover { color: var(--color-teal-dark); }
+
+.drawerGroupLabel {
+  display: block;
+  padding: 14px 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-teal-dark);
+}
+
+.drawerSubItem .drawerLink {
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--color-gray);
+}
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
