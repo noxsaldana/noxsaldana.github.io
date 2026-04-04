@@ -1,0 +1,414 @@
+import { Link } from 'react-router-dom'
+import styles from './ArticlePage.module.css'
+
+export default function HabitatLoss() {
+  return (
+    <main className={styles.page}>
+      <div className={styles.pageHero}>
+        <div className={styles.heroInner}>
+          <p className={styles.breadcrumb}>
+            <Link to="/learning">Learning Center</Link>
+            <span>›</span>
+            Part I
+          </p>
+          <p className="section-eyebrow">Part I of III</p>
+          <h1 className="section-title">
+            How Development Is <span>Displacing</span> US Wildlife
+          </h1>
+          <div className="divider" />
+        </div>
+      </div>
+
+      <div className={styles.articleBody}>
+        <p className={styles.intro}>
+          The United States is in the middle of an accelerating wildlife crisis driven primarily by
+          habitat loss, urban sprawl, and the fragmentation of natural landscapes. Every year,
+          approximately <strong>1 million acres</strong> of natural land are converted to
+          development — pushing wildlife populations into smaller, disconnected patches of habitat
+          and directly into human spaces.
+        </p>
+
+        {/* Section 1 */}
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>The Scale of Habitat Loss</h2>
+
+          <div className={styles.statGrid}>
+            <div className={styles.statCard}>
+              <div className={styles.statNumber}>1 Million</div>
+              <div className={styles.statLabel}>
+                acres of farmland and natural habitat lost annually to urban development
+              </div>
+            </div>
+            <div className={styles.statCard}>
+              <div className={styles.statNumber}>44 Million</div>
+              <div className={styles.statLabel}>
+                acres developed between 1982 and 2017 — roughly the size of Washington State
+              </div>
+            </div>
+            <div className={styles.statCard}>
+              <div className={styles.statNumber}>41%</div>
+              <div className={styles.statLabel}>
+                projected increase in urban and developed land areas by 2060
+              </div>
+            </div>
+          </div>
+
+          <p className={styles.sectionBody}>
+            Wetlands — which support some of the richest wildlife communities on Earth — have
+            suffered some of the most dramatic losses. More than <strong>50% of all continental US
+            wetlands</strong> were destroyed between the 1780s and 1980s through dredging,
+            channelization, and development. Florida has lost approximately 50% of its wetlands;
+            California and Ohio have each lost over 90%. More than{' '}
+            <strong>100,000 acres of wetlands</strong> continue to be destroyed annually.
+          </p>
+        </div>
+
+        {/* Section 2 */}
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>Roads: The Most Visible Wound</h2>
+          <p className={styles.sectionBody}>
+            Roads may be the most visible and lethal form of habitat fragmentation. They kill
+            animals directly and divide the landscapes survivors depend on.
+          </p>
+
+          <div className={styles.statGrid}>
+            <div className={styles.statCard}>
+              <div className={styles.statNumber}>1 Million</div>
+              <div className={styles.statLabel}>vertebrates killed on US roads every single day</div>
+            </div>
+            <div className={styles.statCard}>
+              <div className={styles.statNumber}>96–340M</div>
+              <div className={styles.statLabel}>birds killed on US roads annually</div>
+            </div>
+            <div className={styles.statCard}>
+              <div className={styles.statNumber}>$8 Billion</div>
+              <div className={styles.statLabel}>
+                annual cost of wildlife-vehicle collisions, plus over 200 human deaths per year
+              </div>
+            </div>
+          </div>
+
+          <p className={styles.sectionBody}>
+            Roads do more than kill — they divide. A highway running through a forest effectively
+            creates two separate ecosystems, preventing animals from accessing mates, food, and
+            shelter. This reduces genetic diversity, accelerates local extinctions, and compresses
+            animals into smaller areas — intensifying conflicts with humans.
+          </p>
+
+          <div className={styles.callout}>
+            <p>
+              <strong>Wildlife crossings work.</strong> Where crossing structures combined with
+              fencing have been installed, motorist-wildlife collisions are reduced by up to{' '}
+              <strong>97%</strong>. Florida's I-75 Alligator Alley recorded zero panther deaths in
+              fenced sections. California State Route 58 saw a 93% reduction in desert tortoise
+              deaths after fencing installation. Approximately 1,500 wildlife crossing structures
+              now exist across 43 US states.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 3 */}
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>
+            Invisible Threats: Light, Noise, and Chemical Pollution
+          </h2>
+          <p className={styles.sectionBody}>
+            The impacts of construction and urbanization extend well beyond the physical footprint
+            of a building or road. Three invisible forms of pollution compound the damage:
+          </p>
+
+          <p className={styles.sectionBody}>
+            <strong>Light pollution</strong> has documented negative effects on amphibians, birds,
+            mammals, insects, and plants. It disrupts migratory timing, causes birds to migrate too
+            early or too late — missing critical food and breeding windows — and kills millions of
+            birds annually through collisions with illuminated buildings and towers.
+          </p>
+
+          <p className={styles.sectionBody}>
+            <strong>Noise pollution</strong> from traffic, construction, and industry overlaps with
+            the communication frequencies many animals rely on for mating calls, predator
+            detection, and territorial signaling. When noise drowns out communication, animals
+            experience reduced mating success and are forced to abandon critical feeding and
+            breeding grounds.
+          </p>
+
+          <p className={styles.sectionBody}>
+            <strong>Chemical runoff</strong> from construction sites carries sediment, nitrogen,
+            phosphorus, pesticides, heavy metals, and petroleum products. Sediment smothers aquatic
+            habitats; pesticides and heavy metals bioaccumulate in food chains. Excessive nutrients
+            create algal blooms and dead zones in water bodies.
+          </p>
+        </div>
+
+        {/* Section 4 */}
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>Key Species Most Affected</h2>
+
+          <div className={styles.callout}>
+            <p>
+              <strong>1,300 US animal species</strong> are currently listed as endangered or
+              threatened. More than one-third of US fish and wildlife species are at risk of
+              extinction. The Living Planet Index documents a{' '}
+              <strong>73% average decline</strong> in global vertebrate wildlife populations since
+              1970.
+            </p>
+          </div>
+
+          <div className={styles.speciesGrid}>
+            <div className={styles.speciesCard}>
+              <div className={styles.speciesName}>Florida Panther</div>
+              <p className={styles.speciesBody}>
+                One of the most critically endangered large mammals in North America. The proposed
+                Rural Lands West Project — a 10,300-acre development — will destroy nearly 5,000
+                acres of critical panther habitat. Since 2008, over 30,000 acres of panther range
+                have been lost to development.
+              </p>
+            </div>
+            <div className={styles.speciesCard}>
+              <div className={styles.speciesName}>Florida Scrub-Jay</div>
+              <p className={styles.speciesBody}>
+                Federally listed as threatened since 1987. Habitat is projected to shrink by 64
+                square miles under 2060 development scenarios.
+              </p>
+            </div>
+            <div className={styles.speciesCard}>
+              <div className={styles.speciesName}>Mountain Lions</div>
+              <p className={styles.speciesBody}>
+                Roads and housing fragment territories in California, forcing lions to hunt closer
+                to human settlements — increasing conflict and risk for both humans and animals.
+              </p>
+            </div>
+            <div className={styles.speciesCard}>
+              <div className={styles.speciesName}>North American Birds</div>
+              <p className={styles.speciesBody}>
+                One-third of all North American bird species now need urgent conservation action,
+                with habitat loss as the primary driver.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 5 */}
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>
+            Wildlife Corridors: Reconnecting Fragmented Landscapes
+          </h2>
+          <p className={styles.sectionBody}>
+            A <strong>wildlife corridor</strong> is an undeveloped strip of land connecting two or
+            more habitat areas, allowing animals to move safely between them. They are among the
+            most important tools in modern conservation.
+          </p>
+
+          <ul className={styles.list}>
+            <li>
+              Enable wildlife to migrate, disperse, and adapt to seasonal and climate-driven changes
+            </li>
+            <li>
+              Protect <strong>genetic diversity</strong> by allowing individuals from isolated
+              populations to find mates
+            </li>
+            <li>
+              Allow pollinators to move between areas, supporting plant reproduction across
+              fragmented landscapes
+            </li>
+            <li>
+              Reduce human-wildlife conflict by giving animals safe passage rather than forcing them
+              through neighborhoods
+            </li>
+          </ul>
+
+          <p className={styles.sectionBody}>
+            Much of the remaining wildlife habitat in the US has been fragmented by roads and
+            development. Remaining patches are often too small or too disconnected to support
+            species with large territory needs — such as mountain lions, bears, and wolves.
+          </p>
+        </div>
+
+        {/* Section 6 */}
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>
+            The Link Between Habitat Loss and Human-Wildlife Conflict
+          </h2>
+          <p className={styles.sectionBody}>
+            Habitat loss doesn't just reduce wildlife populations — it{' '}
+            <strong>increases human-wildlife conflict</strong>. As forests are subdivided, open
+            spaces are converted, and cities expand into wildland edges, both humans and wildlife
+            occupy the same shrinking space:
+          </p>
+
+          <div className={styles.callout}>
+            <p>
+              Habitat loss and fragmentation → Wildlife compressed into smaller areas → Wildlife
+              forced into proximity with humans →{' '}
+              <strong>Increased conflict over food, space, and safety</strong>
+            </p>
+          </div>
+
+          <p className={styles.sectionBody}>
+            Human-wildlife conflicts increase significantly during drought, when animals are forced
+            to seek food and water in human-occupied areas. Mountain lions in California are
+            increasingly forced to hunt closer to human settlements. Wildlife-vehicle collisions
+            alone cost Americans more than $8 billion annually.
+          </p>
+        </div>
+
+        {/* Sources */}
+        <div className={styles.sources}>
+          <p className={styles.sourcesTitle}>Sources</p>
+          <ul className={styles.sourcesList}>
+            <li>
+              Smart Growth America —{' '}
+              <a
+                href="https://www.smartgrowthamerica.org/knowledge-hub/news/paving-over-paradise-how-sprawl-destroys-our-farms-and-forests-and-how-smart-growth-can-help/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Paving Over Paradise
+              </a>
+            </li>
+            <li>
+              National Wildlife Federation —{' '}
+              <a
+                href="https://www.nwf.org/~/media/PDFs/Wildlife/EndangeredbySprawl.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Endangered by Sprawl
+              </a>
+            </li>
+            <li>
+              Florida Fish and Wildlife Commission —{' '}
+              <a
+                href="https://myfwc.com/conservation/special-initiatives/wildlife-2060/loss/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wildlife 2060
+              </a>
+            </li>
+            <li>
+              Center for Biological Diversity —{' '}
+              <a
+                href="https://www.biologicaldiversity.org/programs/urban/pdfs/The-True-Cost-of-Sprawl-report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The True Cost of Sprawl
+              </a>
+            </li>
+            <li>
+              Federal Highway Administration —{' '}
+              <a
+                href="https://www.fhwa.dot.gov/clas/ctip/wildlife_crossing_structures/ch_2.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wildlife and Road Corridor Intersections
+              </a>
+            </li>
+            <li>
+              ARC Solutions —{' '}
+              <a
+                href="https://arc-solutions.org/article/wildlife-crossing-success-stories/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wildlife Crossing Success Stories
+              </a>
+            </li>
+            <li>
+              DarkSky International —{' '}
+              <a
+                href="https://darksky.org/resources/what-is-light-pollution/effects/wildlife-ecosystems/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Light Pollution: Effects on Wildlife
+              </a>
+            </li>
+            <li>
+              US EPA —{' '}
+              <a
+                href="https://www.epa.gov/nps/basic-information-about-nonpoint-source-nps-pollution"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Basic Information About Nonpoint Source Pollution
+              </a>
+            </li>
+            <li>
+              Earth.Org —{' '}
+              <a
+                href="https://earth.org/lost-species-the-impact-of-habitat-destruction-in-the-us/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                How Habitat Loss Imperils US Wildlife
+              </a>
+            </li>
+            <li>
+              World Wildlife Fund —{' '}
+              <a
+                href="https://www.worldwildlife.org/news/press-releases/catastrophic-73-decline-in-the-average-size-of-global-wildlife-populations-in-just-50-years-reveals-a-system-in-peril/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                73% Decline in Wildlife Populations
+              </a>
+            </li>
+            <li>
+              Inside Climate News —{' '}
+              <a
+                href="https://insideclimatenews.org/news/10032026/florida-panther-usfws-cuts/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Florida Panther Habitat Loss
+              </a>
+            </li>
+            <li>
+              National Wildlife Federation —{' '}
+              <a
+                href="https://www.nwf.org/Our-Work/Habitats/Wildlife-Corridors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wildlife Corridors
+              </a>
+            </li>
+            <li>
+              US Fish &amp; Wildlife Service —{' '}
+              <a
+                href="https://www.fws.gov/story/wildlife-corridors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wildlife Corridors
+              </a>
+            </li>
+            <li>
+              Science Advances —{' '}
+              <a
+                href="https://www.science.org/doi/10.1126/sciadv.adx0286"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Human-Wildlife Conflict is Amplified During Drought
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Article navigation */}
+        <div className={styles.articleNav}>
+          <Link to="/learning" className="btn-secondary">
+            ← Learning Center
+          </Link>
+          <Link to="/learning/urban-wildlife" className="btn-primary">
+            Next: Urban Wildlife →
+          </Link>
+        </div>
+      </div>
+    </main>
+  )
+}
