@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Center — Evolving Wildlife Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="nav">
+    <a class="nav-logo" href="/">
+      <img src="/EW Logo Horiz C.png" alt="Evolving Wildlife Foundation" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#about"    class="nav-link">About</a></li>
+      <li><a href="/#programs" class="nav-link">Programs</a></li>
+      <li><a href="/#events"   class="nav-link">Events</a></li>
+      <li class="nav-dropdown">
+        <a href="/learning/" class="nav-link nav-dropdown-trigger">
+          Learning <span class="nav-dropdown-caret">▾</span>
+        </a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="/learning/"                        class="nav-dropdown-item">Learning Center</a></li>
+          <li><a href="/learning/habitat-loss.html"       class="nav-dropdown-item">Habitat Loss</a></li>
+          <li><a href="/learning/urban-wildlife.html"     class="nav-dropdown-item">Urban Wildlife</a></li>
+          <li><a href="/learning/humane-coexistence.html" class="nav-dropdown-item">Humane Coexistence</a></li>
+        </ul>
+      </li>
+      <li><a href="/#contact" class="nav-link">Contact</a></li>
+      <li><a href="/#donate"  class="nav-link nav-cta">Donate</a></li>
+    </ul>
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <ul id="nav-drawer" class="nav-drawer" role="menu">
+    <li><a href="/#about"    class="drawer-link">About</a></li>
+    <li><a href="/#programs" class="drawer-link">Programs</a></li>
+    <li><a href="/#events"   class="drawer-link">Events</a></li>
+    <li class="no-border"><span class="drawer-group-label">Learning</span></li>
+    <li class="no-border"><a href="/learning/"                        class="drawer-sub-link">Learning Center</a></li>
+    <li class="no-border"><a href="/learning/habitat-loss.html"       class="drawer-sub-link">Habitat Loss</a></li>
+    <li class="no-border"><a href="/learning/urban-wildlife.html"     class="drawer-sub-link">Urban Wildlife</a></li>
+    <li><a href="/learning/humane-coexistence.html" class="drawer-sub-link">Humane Coexistence</a></li>
+    <li><a href="/#contact" class="drawer-link">Contact</a></li>
+    <li><a href="/#donate"  class="drawer-link">Donate</a></li>
+  </ul>
+
+  <!-- ── PAGE CONTENT ── -->
+  <main class="learning-page">
+    <div class="learning-hero">
+      <div class="learning-hero-inner">
+        <p class="section-eyebrow">Educational Resources</p>
+        <h1 class="section-title"><span>Learning</span> Center</h1>
+        <div class="divider"></div>
+        <p class="section-body">
+          A research-based library on wildlife coexistence, urban ecology, and humane conflict
+          resolution — compiled from peer-reviewed research, government agencies, and leading
+          wildlife organizations.
+        </p>
+      </div>
+    </div>
+
+    <div class="learning-articles">
+      <div class="learning-grid">
+
+        <a href="/learning/habitat-loss.html" class="learning-card">
+          <p class="learning-card-eyebrow">Part I</p>
+          <h2 class="learning-card-title">How Development Is Displacing US Wildlife</h2>
+          <p class="learning-card-body">
+            Every year, 1 million acres of natural habitat are lost to urban sprawl. Learn how
+            construction, roads, and pollution are pushing wildlife out of their homes — and into ours.
+          </p>
+          <span class="learning-card-cta">Read Article →</span>
+        </a>
+
+        <a href="/learning/urban-wildlife.html" class="learning-card">
+          <p class="learning-card-eyebrow">Part II</p>
+          <h2 class="learning-card-title">Urban Wildlife: Adapting to a Changed World</h2>
+          <p class="learning-card-body">
+            Coyotes now inhabit every major US city. Peregrine falcons nest on skyscrapers. Explore
+            how wildlife has evolved to survive in human-dominated landscapes — and the conflicts that follow.
+          </p>
+          <span class="learning-card-cta">Read Article →</span>
+        </a>
+
+        <a href="/learning/humane-coexistence.html" class="learning-card">
+          <p class="learning-card-eyebrow">Part III</p>
+          <h2 class="learning-card-title">Living With Wildlife: A Humane Approach</h2>
+          <p class="learning-card-body">
+            Lethal control doesn't work — the science is clear. Discover evidence-based strategies
+            for coexisting with wildlife, protecting your home, and avoiding the hidden dangers of rodenticides.
+          </p>
+          <span class="learning-card-cta">Read Article →</span>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <img src="/EW Logo Horiz C.png" alt="Evolving Wildlife Foundation" class="footer-logo" />
+    <p>&copy; 2026 Evolving Wildlife Foundation. All rights reserved.</p>
+    <p><a href="mailto:help@evolvingwildlifefoundation.com">help@evolvingwildlifefoundation.com</a></p>
+  </footer>
+
+  <img src="/Evolving_Wildlife_Banner_transparent.png" alt="" class="wildlife-banner" aria-hidden="true" />
+  <script src="/js/main.js"></script>
+</body>
+</html>
